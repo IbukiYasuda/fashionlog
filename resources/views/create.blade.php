@@ -44,7 +44,6 @@
             <div id="header"><b>Google Maps - 場所検索</b></div>
             
             <input id="address" type="textbox" name='post[place]' value="{{ old('post.place') }}" >
-            <input type="button" value="Encode" onclick="codeAddress()">
             
             <input type="submit" value="保存"/>
         </form>
