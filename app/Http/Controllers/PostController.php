@@ -119,7 +119,12 @@ class PostController extends Controller
         return redirect('/');
     }
     
-
-    
+    public function __construct()
+    {
+        $this->middleware('auth')->only(['create', 'store', 'edit', 'update', 'delete']);
+        // 追加
+        $this->middleware('can:update,post')->only(['edit', 'update']);
+        $this->middleware('verified')->only('create');
+    }
 }
 ?>

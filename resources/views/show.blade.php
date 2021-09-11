@@ -24,17 +24,23 @@
            <div id="map" style='height:400px; width:500px'></div>
            <script src="{{ asset('/js/result.js') }}"></script>
            <script async src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key={{ config('services.google-map.apikey') }}&callback=initMap" defer></script> 
+           
+           @can('update', $post)
            <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
-            <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline">
+           @endcan
+           
+           <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline">
            @csrf
            @method('DELETE')
+           
+           @can('update', $post)
            <button type="submit">delete</button> 
+           @endcan
+           
            </form>
            <div class="footer">
                 <a href="/">戻る</a>
            </div>
         </div>
-        
-        
 @endsection
             
