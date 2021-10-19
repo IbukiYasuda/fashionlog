@@ -18,6 +18,8 @@ Route::get('/', 'PostController@index');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('/users', 'UsersController', ['only' => ['show']]);
+
 
 Route::get('/posts/create', 'PostController@create')->middleware('auth');
 
@@ -26,3 +28,5 @@ Route::put('/posts/{post}', 'PostController@update');
 Route::delete('/posts/{post}', 'PostController@delete');
 Route::get('/posts/{post}', 'PostController@show');
 Route::post('/posts', 'PostController@store');
+
+

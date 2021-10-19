@@ -1,0 +1,170 @@
+/*ボタン*/
+
+.button06 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  width: 140px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #bbbbbb;
+  box-shadow: 0 0 10px rgba(0 0 0 / .2);
+  border-radius: 6px;
+  transition: 0.3s;
+  position: relative;
+  bottom: 17px;
+  left: 969px;
+}
+
+.button06::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+  transform: rotate(45deg);
+}
+
+.button06:hover {
+  text-decoration: none;
+  background-color: #aaaaaa;
+  box-shadow: 0 0 10px rgba(0 0 0 / 0);
+  color: #333;
+}
+
+.btn-denim {
+  position: relative;
+  left: 5px;
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  background-color: #293b6a;
+  font-size: 16px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px 25px;
+  border: 1px dashed #FFF;
+  box-shadow: 0px 0px 0px 5px #293b6a;/* box-shadowで外枠を */
+}
+
+.btn-denim:hover {
+  border-style: solid;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-denim1 {
+  position: relative;
+  left: 5px;
+  display: inline-block;
+  text-align: left;
+  background-color: #293b6a;
+  font-size: 16px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1px 18px;
+  border: 1px dashed #FFF;
+  box-shadow: 0px 0px 0px 5px #293b6a;/* box-shadowで外枠を */
+  margin-right: 30px;
+}
+
+.btn-denim1:hover {
+  border-style: solid;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/*タグ*/
+
+.tag {
+	display: inline-block;
+	margin: 0 .1em .6em 0;
+	padding: .6em;
+	line-height: 0.8;
+	text-decoration: none;
+	color: black;
+	background-color: #fff;
+	border: 1px solid black;
+	border-radius: 2em;
+}
+
+#tags {
+  width: 300px;
+}
+	
+	
+.main-title {
+  margin-bottom: -20px;
+}
+
+.top-title {
+  padding: 5px 0 15px 0;
+}
+
+.price {
+  margin-bottom: 18px;
+}
+
+.maps {
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+
+.box{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    width: 500px;
+}
+
+.google-maps {
+  position: absolute;
+  top: 110px;
+  left: 750px;
+}
+
+.show-title {
+  padding: 10px;
+  border-left: 2px solid #000;
+  margin-bottom: 10px;
+}
+
+.back {
+  margin-top: 20px;
+}
+
+.content__place {
+  margin-bottom: 20px;
+}
+
+.body {
+  margin-top: 20px;
+}
+
+.back1 {
+  position: absolute;
+  top: 708px;
+  left: 169px
+}
+
+.button1 {
+  margin-left: 104px
+}
+
+.frame {
+	display: inline-block;
+	box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+}

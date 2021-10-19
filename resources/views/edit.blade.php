@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+<link rel="stylesheet" type="text/css" href={{ asset('css/index.css') }}>
+
 <body>
     <div class='container'>
         <h1 class="title">Edit</h1>
@@ -19,7 +21,7 @@
                 <p class="image__error" style="color:red">{{ $errors->first('image') }}</p>
             </div>
             
-            <div class='content__price'>
+            <div class='content__price price'>
                 <h2>Price</h2>
                 <input type='text' name='post[price]' value="{{ $post->price }}">
             </div>
@@ -36,7 +38,7 @@
                 >
             </div>
             
-            <div class='content__body'>
+            <div class='content__body body'>
                 <h2>Body</h2>
                 <input type='text' name='post[body]' value="{{ $post->body }}">
                 <p class="body__error" style="color:red">{{ $errors->first('post.body') }}</p>
@@ -50,6 +52,9 @@
             <input type="submit" value="保存">
         </form>
         </div>
+         <div class='back'>
+            <a href="/" class="btn-denim1">戻る</a>
+        </div> 
     </div>
     
 </body>

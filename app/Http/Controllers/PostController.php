@@ -126,5 +126,8 @@ class PostController extends Controller
         $this->middleware('can:update,post')->only(['edit', 'update']);
         $this->middleware('verified')->only('create');
     }
+    
+
+    
 }
 ?>

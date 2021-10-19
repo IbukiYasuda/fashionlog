@@ -2,9 +2,8 @@
 @section('content')
 <link rel="stylesheet" type="text/css" href={{ asset('css/index.css') }}>
 
-    <div class='container'>
-           <h2 class='main-title'>Time Line</h2>
-           <a href='/posts/create' class='button06'><span>投稿する</span></a>
+<div class='container'>
+           <h4 class='top-title'>{{ $user_name }} の投稿一覧</h4>
            <div class='row'>
                        @foreach ($posts as $post)
                        <div class='col-3'>
@@ -16,11 +15,11 @@
                             <div class='card-body'>
                                 <h4 class="card-title"><a href='/posts/{{ $post->id }}'>{{ $post->title }}</a></h4>
                                 <div class='card-text'>
-                                    投稿者：<a href="/users/{{ $post->user_id }}">{{ $post->user->name }}</a>
+                                    投稿者：<a>{{ $post->user->name }}</a>
                                     <br>値段：¥<a>{{ $post->price }}</a>
                                     <br>タグ:
                                     @foreach($post->tags as $tag)
-                                    <p class='tag'>#{{ $tag->name }}</p>
+                                    <p class='tag'>{{ $tag->name }}</p>
                                     @endforeach
                                 </div>
                             </div>
@@ -31,8 +30,13 @@
                    </div>
                    <div class='paginate'>
                         {{ $posts ->links() }}
-                        </div>
+                   </div>
+                  <div class="footer">
+                       <a href="/"  class='btn-denim'>戻る</a>
+                  </div>
     </div>
+    
+      
         
         
 @endsection

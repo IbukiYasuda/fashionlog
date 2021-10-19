@@ -1,6 +1,7 @@
 @extends('layouts.app')
-
 @section('content')
+<link rel="stylesheet" type="text/css" href={{ asset('css/index.css') }}>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -18,7 +19,7 @@
                     You are logged in!
                 </div>
             </div>
-            <div class="back">[<a href="/">back</a>]</div>
+            <div><a href="/"  class="btn-denim1">戻る</a></div>
         </div>
     </div>
 </div>
