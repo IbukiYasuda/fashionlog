@@ -20,3 +20,21 @@ URL: https://pure-springs-17321.herokuapp.com/
 <img src="https://user-images.githubusercontent.com/85251056/138230755-f6787504-0b19-4057-8277-9e1a33977d4e.png">
 
 
+## 使用技術
+・PHP<br>
+・Laravel<br>
+・JavaScript<br>
+・HTML<br>
+・CSS<br>
+・MariaDB<br>
+・AWS
+
+
+## 　機能一覧
+・ユーザー登録、ログイン機能<br>
+・投稿機能<br>
+&emsp;画像投稿機能(AWS：S3)<br>
+&emsp;位置情報検索機能(geocoder)<br>
+・タグ機能<br>
+・データベースリレーション(１対多、多対多)
+
